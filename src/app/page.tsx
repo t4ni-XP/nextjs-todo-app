@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { Box, Typography, Paper, Grid } from "@mui/material";
+import { Box, Typography, Paper } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 
 import Header from "./component/Header";
 import SideBar from "./component/Sidebar";
@@ -53,7 +54,7 @@ export default function Home() {
           </Typography>
           <Grid container spacing={2}>
             {/* To Do カラム */}
-            <Grid item xs={4}>
+            <Grid>
               <Typography variant="h6" gutterBottom>
                 To Do
               </Typography>
@@ -61,7 +62,7 @@ export default function Home() {
             </Grid>
 
             {/* In Progress カラム */}
-            <Grid item xs={4}>
+            <Grid>
               <Typography variant="h6" gutterBottom>
                 In Progress
               </Typography>
@@ -69,7 +70,7 @@ export default function Home() {
             </Grid>
 
             {/* Done カラム */}
-            <Grid item xs={4}>
+            <Grid>
               <Typography variant="h6" gutterBottom>
                 Done
               </Typography>
